@@ -243,7 +243,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #50817e;
+  color: #FFB548;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -540,6 +540,49 @@ progress {
 	font-size: 18px;
 	line-height: 22px;
 }
+.section-person-description
+{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	opacity: 0.5;
+}
+.section-person-img
+{
+	border:3px solid #FFB548;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	max-width:73px;
+}
+.card-col-1
+{
+	float:left;
+	width:100px;
+}
+.card-col-2
+{
+	float:left;
+	width:auto;
+}
+.card-col-3
+{
+	float:right;
+	width:10%;
+	text-align:right;
+}
+.section-person-date
+{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	mix-blend-mode: normal;
+	opacity: 0.5;
+}
 .progress-bar-bg
 {
 	background-image:url('../assets/img/progress-bar.png');
@@ -691,6 +734,12 @@ progress {
   border-radius: 0.25rem;
   max-width: 100%;
   height: auto;
+}
+
+
+.mobmax40
+{
+	max-width:100%;
 }
 
 .figure {
@@ -5895,6 +5944,21 @@ textarea.form-control-lg {
   .text-the-story
   {
 	  margin-top:150px;
+  }
+  .mobmax40
+  {
+	  width:40%;
+	  margin:0 auto;
+	  display:block;
+  }
+  .input-group-newsletter .col, .input-group-newsletter .col-auto
+  {
+	  flex:initial;
+	  width:100%;
+  }
+  .input-group-newsletter .btn
+  {
+	  width:100%;
   }
   .modal-fullscreen-md-down {
     width: 100vw;
@@ -11460,6 +11524,20 @@ body {
     font-size: 72px;
     line-height: 83px;
   }
+  .card
+  {
+	  clear:both;
+	  max-width:454px;
+  }
+  .card1
+  {
+	  float:right;
+  }
+  .card3
+  {
+	  float:right;
+	  margin-right:7%;
+  }
 }
 @media (min-width: 992px) {
   .masthead {
@@ -11478,120 +11556,93 @@ body {
 }
 
 .the-game-section {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  background: url(../assets/img/the-games-bg.jpg);
-  background-size: cover;
-}
-.the-game-section p {
-  margin-bottom: 5rem;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	background: url("../assets/img/the-games-bg.jpg");
+	background-size: cover;
 }
 
 .features-section {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  background: url(../assets/img/features.jpg);
-  background-size: cover;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	background: url("../assets/img/features.jpg");
+	background-size: cover;
 }
 
 .requirements-section {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  background: url(../assets/img/requirements.jpg);
-  background-size: cover;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	background: url("../assets/img/requirements.jpg");
+	background-size: cover;
 }
 
 .top-scores-section {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  background: url(../assets/img/top-score-bg.png);
-  background:black;
-  background-size: cover;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	background: url("../assets/img/top-score-bg.jpg");
+	background-size: cover;
 }
 
 .newsletter-section {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  background: url(../assets/img/newsletter-bg.jpg);
-  background-size: cover;
-}
-
-.projects-section {
-  padding: 10rem 0;
-}
-.projects-section .featured-text {
-  padding: 2rem;
-}
-@media (min-width: 992px) {
-  .projects-section .featured-text {
-    padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #FFB548;
-  }
-}
-.projects-section .project-text {
-  padding: 3rem;
-  font-size: 90%;
-}
-@media (min-width: 992px) {
-  .projects-section .project-text {
-    padding: 5rem;
-  }
-  .projects-section .project-text hr {
-    border-color: #FFB548;
-    border-width: 0.25rem;
-    width: 30%;
-  }
+	padding-bottom: 1rem;
+	background:#090a0c;
 }
 
 .form-signup input {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  height: auto;
-  font-family: Open Sans;
-  font-size: 18px;
-  line-height:25px;
-  border: 0;
-  background:#1b1d1e;
-  color:#FFB548;
+	box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+	padding: 1.85rem 2rem 0.65rem 2rem;
+	height: auto;
+	font-family: Open Sans;
+	font-size: 18px;
+	line-height:25px;
+	border: 0;
+	background:#1b1d1e;
+	color:#FFB548;
+}
+.form-signup label {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	color: #FFFFFF;
+	opacity: 0.5;
+	position:absolute;
+	margin-top:0.6rem;
+	margin-left:2rem;
 }
 
 .contact-section {
-  padding-top: 1rem;
+	padding-top: 2rem;
+	padding-bottom: 2.5rem;
 }
-.contact-section .card {
-  border: 0;
-  border-bottom: 0.25rem solid #FFB548;
+.contact-text
+{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	text-decoration:none;
+	color: #FFFFFF;
 }
-.contact-section .card h4, .contact-section .card .h4 {
-  font-size: 0.8rem;
-  font-family: Arial;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-}
-.contact-section .card hr {
-  border-color: #FFB548;
-  border-width: 0.25rem;
-  width: 3rem;
-}
-.contact-section .social {
-  margin-top: 5rem;
-}
-.contact-section .social a {
-  text-align: center;
-  height: 3rem;
-  width: 3rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 100%;
-  line-height: 3rem;
-  color: rgba(255, 255, 255, 0.3);
-}
-.contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-.contact-section .social a:active {
-  color: #fff;
+.text-copyright
+{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	color: #FFFFFF;
+	opacity: 0.5;
 }
 
+.footer .container .row {
+	padding-top: 1.5rem;
+	border-top: 0.873968px solid rgba(255, 255, 255, 0.5);
+}
 .footer {
-  padding: 5rem 0;
+	padding-bottom: 4rem;
 }
