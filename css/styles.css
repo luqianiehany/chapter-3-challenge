@@ -11490,15 +11490,17 @@ body {
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: #FFFFFF;
+    font-size: 24px;
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: #FFFFFF;
+    font-size: 12px;
   }
-  #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+  .nav-signup {
+    margin-left:150px;
   }
   #mainNav .nav-link:active {
     color: #fff;
@@ -11526,7 +11528,16 @@ body {
     border-bottom: 0.25rem solid #64a19d;
   }
 }
-
+@media (min-width: 1200px) {
+  .nav-signup {
+    margin-left:250px;
+  }
+ }
+ @media (min-width: 1400px) {
+  .nav-signup {
+    margin-left:350px;
+  }
+ }
 .btn {
   padding: 18.7px 55.57px 19.3px 56.58px;
   font-family: Open Sans;
